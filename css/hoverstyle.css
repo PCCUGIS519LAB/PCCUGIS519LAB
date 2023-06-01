@@ -1,0 +1,31 @@
+    .link1:hover {
+    background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+    color: white;
+    transition: 0.7s;
+    }
+    .btn1:hover {
+    background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+    color: blue;
+    transition: 0.7s;
+    }
+    .btn2:hover {
+    background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+    color: black;
+    transition: 0.7s;
+    }
+    .btn3:hover {
+    background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+    color: red;
+    transition: 0.7s;
+    }
+    .btn4 {
+        margin-left: 33px;
+        background: #01B468;
+        color: black;
+        transition: 0.7s;
+        }
+    .btn4:hover {
+        background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+        color: white;
+        transition: 0.7s;
+        }

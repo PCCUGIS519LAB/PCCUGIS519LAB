@@ -1,0 +1,598 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="goTopstyle.css">
+        <link rel="stylesheet" href="css/hoverstyle.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="goTopscript.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <title>Research|PCCU GIS_519 LAB </title>
+    </head>
+<!--
+    　 ∧＿∧
+    （｡･ω･｡)つ━☆・*。
+    ⊂　　 ノ 　　　・゜+.
+    　しーＪ　　　°。+ *´¨)
+    　　　       　　.· ´¸.·*´¨) ¸.·*¨)
+    　　　　　　　     　(¸.·´ (¸.·’*
+        咻咻去去BUG走~~!
+-->
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="pictures/519LAB.png" alt="Bootstrap" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="回到首頁" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="成員" href="members.html">Members</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="研究領域" href="research.html">Research</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="系所網頁" href="https://geography.pccu.edu.tw/" target="_blank">Department website</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="聯絡我們" href="contact.html">contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="intro">
+            <div class="mt-4 p-5 bg-body-Secondary rounded">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="fw-bold">Lab. for Digital Earth and Geoinformaties</h1>
+                            <p class="lead">數位地球與空間資訊實驗室 | 研究領域 Research</p>
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link link1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="研究項目" href="#Research" style="
+                                    margin-left: 33px;
+                                    color:black;
+                                    ">Research</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="課程" href="#Courses" style="
+                                    margin-left: 33px;
+                                    color:black;
+                                    ">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="發表文章" href="#Publication">Publication</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 id="Research"><br>研究領域 | Research</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 col-md-10 offset-md-1 row-cols-md-1 g-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="pictures/big data.jpg" class="d-block w-100">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                            <h5 class="card-title">空間大數據分析<br>Big Data Spatial analysis</h5>
+                            <p class="card-text">大數據時代的來臨讓地理資料的取得變得更加容易，但也讓資料的分析處理變得更加複雜。智慧型手機以及行動網路的普及，讓研究者可以得到包含大量使用者空間行為的行動資料（Mobility Data），或是所謂的自發性地理資訊(Volunteered Geographic Information，VGI)等，未來對於空間大數據分析的需求勢必增加......</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="pictures/photogrammetry.png" class="d-block w-100">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                            <h5 class="card-title">航空測繪<br>photogrammetry</h5>
+                            <p class="card-text">航空照片測繪是地理學的重要技術之一，透過航照可以獲得某一個時間點上的地表土地利用/覆蓋資訊，運用不同時期航照更可以比對區域內土地利用/覆蓋的變遷，將變遷區域轉繪至地圖上，供規劃者或研究者進一步分析。</p>
+                            <a class="btn link1" href="upcoming.html"><small class="text-muted">Photography Gallery</small></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="pictures/Image Recognition.jpg" class="d-block w-100">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                            <h5 class="card-title">數值影像處理<br>Image Recognition</h5>
+                            <p class="card-text">探討數位影像處理的基本原理與工具軟體的應用，主要包括空間域中之基本影像處理，影像增強、頻率域上之影像增強、影像復原、彩色影像處理，並應用於航遙測影像處理中。</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="pictures/Geovisualization.jpg" class="d-block w-100">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                            <h5 class="card-title">地理可視化<br>Geovisualization</h5>
+                            <p class="card-text">
+                                
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 id="Courses"><br>課程 | Courses</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="row row-cols-1 row-cols-md-3 g-3">
+                        <div class="card">
+                            <img src="pictures/course.jpg" class="card-img-top">
+                            <div class="card-body">
+                            <h5 class="card-title">大學部課程</h5>
+                            <p class="card-text">Undergraduate Courses</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-link text-start" data-bs-toggle="modal" data-bs-target="#GLOBAL_POSITIONING_SYSTEM" style="color:black;"><strong>全球定位系統</strong><br><small class="text-muted">GLOBAL POSITIONING SYSTEM</small></button>
+                                <p class="card-text"><small class="text-body-secondary">地理系1</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-link text-start" data-bs-toggle="modal" data-bs-target="#INTRODUCTION_OF_PHOTOGRAMMETRY" style="color:black;"><strong>航測概論</strong><br><small class="text-muted">INTRODUCTION OF PHOTOGRAMMETRY</small></button>
+                                <p class="card-text"><small class="text-body-secondary">地理系2</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-link text-start" data-bs-toggle="modal" data-bs-target="#NUMERICAL_IMAGE_PROCESSING" style="color:black;"><strong>數值影像處理</strong><br><small class="text-muted">NUMERICAL IMAGE PROCESSING</small></button>
+                                <p class="card-text"><small class="text-body-secondary">地理系3</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-link text-start" data-bs-toggle="modal" data-bs-target="#PYTHON_GEOSPATIAL_ANALYSIS" style="color:black;"><strong>地理空間分析PYTHON程式設計</strong><br><small class="text-muted">PYTHON GEOSPATIAL ANALYSIS</small></button>
+                                <p class="card-text"><small class="text-body-secondary">地理系3</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-link text-start" data-bs-toggle="modal" data-bs-target="#BIG_DATA_AND_SPATIAL_ANALYSIS" style="color:black;"><strong>空間大數據分析</strong><br><small class="text-muted">BIG DATA AND SPATIAL ANALYSIS</small></button>
+                                <p class="card-text"><small class="text-body-secondary">地理系3  <span class="badge rounded-pill bg-danger">已停開課程</span></small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-link text-start" data-bs-toggle="modal" data-bs-target="#GEO-CYBERINFRASTRUCTURE_AND_ITS_APPLICATIONS" style="color:black;"><strong>地理資訊網路架構與應用實作</strong><br><small class="text-muted">GEO-CYBERINFRASTRUCTURE AND ITS APPLICATIONS</small></button>
+                                <p class="card-text"><small class="text-body-secondary">地理系3</small></p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <img src="pictures/course.jpg" class="card-img-top">
+                            <div class="card-body">
+                            <h5 class="card-title">研究所課程</h5>
+                            <p class="card-text">Graduate Course</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-link text-start" data-bs-toggle="modal" data-bs-target="#INTRODUCTION_TO_SPATIAL_DATA_MINING_AND_MACHINE_LEARNING" style="color:black;"><strong>空間資料探勘與機器學習導論</strong><br><small class="text-muted">INTRODUCTION TO SPATIAL DATA MINING AND MACHINE LEARNING</small></button>
+                                <p class="card-text"><small class="text-body-secondary">地理碩1</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-link text-start" data-bs-toggle="modal" data-bs-target="#SPATIAL_INFORMATICS_AND_LOCATION_BASED_SERVICE" style="color:black;"><strong>空間資訊與適地性服務</strong><br><small class="text-muted">SPATIAL INFORMATICS AND LOCATION BASED SERVICE</small></button>
+                                <p class="card-text"><small class="text-body-secondary">資傳碩1</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><br><br><br>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><br><br>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><br><br>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </li>
+                            </ul>
+                            <div class="card-body">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pictures/course.jpg" class="card-img-top">
+                            <div class="card-body">
+                            <h5 class="card-title">跨域、校外推廣課程</h5>
+                            <p class="card-text">Interdisciplinary Learning & General Education Course</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-link text-start" data-bs-toggle="modal" data-bs-target="#COMMUNITY_DEVELOPMENT_AND_COMMUNITY_CULTURE" style="color:black;"><strong>社區發展與社區文化</strong><br><small class="text-muted">COMMUNITY DEVELOPMENT AND COMMUNITY CULTURE</small></button>
+                                <p class="card-text"><small class="text-body-secondary">跨域專長-永續社區與綠能實踐  <span class="badge rounded-pill bg-warning text-dark">USR計畫專班</span></small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><br><br><br>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><br><br><br>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><br><br>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><br><br>
+                                <p class="card-text"><small class="text-body-secondary"></small></p>
+                            </li>
+                            </ul>
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Scrollable modal -->
+            <div class="modal fade" id="PYTHON_GEOSPATIAL_ANALYSIS" tabindex="-1" aria-labelledby="PYTHON_GEOSPATIAL_ANALYSIS" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="PYTHON_GEOSPATIAL_ANALYSIS">地理空間分析PYTHON程式設計</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        地理資訊系統(GIS)已經被廣泛的應用在各種不同的研究領域以及日常生活當中。空間分析是地理資訊系統當中最核心的部分，同時也是解決地理空間問題的方法。本課程主要可分為三大部分，第一部分為空間分析的基礎概念，以及介紹主要的資料收集與分析工具。第二部分為空間分析方法概論，針對初級學者，說明空間分析的主要目的和方法，以及如何利用空間分析來解決空間問題。第三部分為實作。配合本課程所教授之概念，利用Python程式語言來實作資料收集、處理、分析、以及展示。<br><br>
+                        The objective of this course is to present the advanced students with an overview of methods, techniques, systems and applications in Python Geospatial Programming. The course is designed to give the students a better understanding of Geodtabase design and introduce advanced Python Geospatial Packages. There are three essential topics in this course which are basic python language, the structure of spatial data, and popular python geospatial packages.<br><br>
+                        <iframe src="https://www.youtube-nocookie.com/embed/Rw9M3phFNh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-success" href="https://icas.pccu.edu.tw/cfp/?ccode=356836&scode=356836#syllpage" target="_blank" role="button">More about this course</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="NUMERICAL_IMAGE_PROCESSING" tabindex="-1" aria-labelledby="NUMERICAL_IMAGE_PROCESSING" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="NUMERICAL_IMAGE_PROCESSING">數值影像處理</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        本課程希望訓練學生能運用數值遙測處理技術進行地理研究並應用在大地現況或歷史主題。將以遙測學為基礎，介紹遙測影像分析之基本原理、資料格式和處理方法。<br>配合遙測影像分析軟體，使學生熟悉遙測影分析方法，並透過實務操作，讓學生能實際運用遙測影像進行相關課題之研究。<br><br>
+                        This course teaches the image processing and analyzing techniques for applying to the geographic research issues, including human and physical aspects. Specifically, students in the course will get familar with the Erdas Imagine software through practices. Those practices will be helpful for advanced researches.<br><br>
+                        <iframe src="https://www.youtube-nocookie.com/embed/UFJIFLJF8Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-success" href="https://icas.pccu.edu.tw/cfp/?ccode=355673&scode=355673#syllpage" target="_blank" role="button">More about this course</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="GLOBAL_POSITIONING_SYSTEM" tabindex="-1" aria-labelledby="GLOBAL_POSITIONING_SYSTEM" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="GLOBAL_POSITIONING_SYSTEM">全球定位系統</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        本課為初學者介紹全球定位系統(GPS), 內容分為兩大部份. 第一部份為基本原理, 介紹GPS發展史與基本架構, 和傳統測量作比較, 並且介紹必要的數學分析工具和GPS的時空參考系統, 以及誤差問題. 第二部份則從兩個方向來闡述GPS的應用, 首先是介紹各種差分法和網形觀測, 旨在消除誤差並精準定位, 以服務一般市場所需的導航與定位需求. 其次以數值分析與物理模型, 透過解析誤差來源, 討論地球科學的相關研究議題, 包括它在大氣, 潮汐, 板塊運動觀測上的應用. 最後討論在上述兩個應用方向上, GPS與地理資訊系統以及遙測的結合. 本課程要求學生使用GPS進行定位測量以及分析處理誤差.<br><br>
+                        This course is designed to introduce the basis for GPS measurement and its applications. Students are required to understand not only how to obtain location and navigation information with GPS, but how to deal with the error and conduct geoscientific studies.<br><br>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-success" href="https://icas.pccu.edu.tw/cfp/?ccode=362946&scode=362946#syllpage" target="_blank" role="button">More about this course</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="BIG_DATA_AND_SPATIAL_ANALYSIS" tabindex="-1" aria-labelledby="BIG_DATA_AND_SPATIAL_ANALYSIS" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="BIG_DATA_AND_SPATIAL_ANALYSIS">空間大數據分析</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        大數據時代的來臨讓地理資料的取得變得更加容易，但也讓資料的分析處理變得更加複雜。智慧型手機以及行動網路的普及，讓研究者可以得到包含大量使用者空間行為的行動資料（Mobility Data），或是所謂的自發性地理資訊(Volunteered Geographic Information，VGI)等，未來對於空間大數據分析的需求勢必增加。因此，本課程希望以深入淺出的方式，教授空間大數據分析的相關理論與實作流程。<br>在空間大數據分析的過程當中，前期的資料獲取與處理佔研究時程很大的一部分，本課程在前半段將介紹空間大數據分析的基礎概念，以及利用爬蟲與程式工具實作資料收集與前處理的流程，訓練學生自行資料收集以及過濾處理能力。<br>在課程中段則解釋空間大數據分析方法概論，針對初級學者，說明空間大數據分析的主要目的和方法，以及如何利用程式工具來對於空間大數據進行資料剖析與視覺化。本研究也將介紹在進行資料分析時會需要用到開放地理資料格式標準，高效能的運算資源（high-performance computing, HPC) 運算架構，空間資料基礎設施 (geospatial data cyberinfrastructure) ，地理資料探勘 (geospatial data mining)等，時空資料分析（spatio-temporal data analysis）基礎概念。<br>配合本課程所教授之概念，本課程將利用Python程式語言來實作空間大數據的資料收集、處理、分析、以及展示，課程後半配合大量的案例展示與討論來加深學生學習的印象與成效。
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-success" href="https://icas.pccu.edu.tw/cfp/?ccode=347405&scode=347405#syllpage" target="_blank" role="button">More about this course</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="INTRODUCTION_OF_PHOTOGRAMMETRY" tabindex="-1" aria-labelledby="INTRODUCTION_OF_PHOTOGRAMMETRY" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="INTRODUCTION_OF_PHOTOGRAMMETRY">航測概論</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        航空照片判讀是地理學的重要技術之一，透過航照可以獲得某一個時間點上的地表土地利用/覆蓋資訊，運用不同時期航照更可以比對區域內土地利用/覆蓋的變遷，將變遷區域轉繪至地圖上，供規劃者或研究者進一步分析。本課程的主要目標是教導地理系學生航空測量及遙感探測的基礎知識，同時也實施立體像片對的觀測實習，使學生對航測及遙測的理論與航照判讀原理及其應用有深刻的認識，並應用到以後的中學地理教學或相關研究實務上。<br><br>
+                        Digital Photogrammetry records what happened on Landscape which is the important material for geographic research. Meanwhile, these information is crucial for planners and researchers. Therefore, this course introduces the basic principles of digital photogrammetry. This will be a useful tool for student to procede thier tasks.<br><br>
+                        <iframe src="https://www.youtube-nocookie.com/embed/cTnqBFUWLIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-success" href="https://icas.pccu.edu.tw/cfp/?ccode=355304&scode=355304#syllpage" target="_blank" role="button">More about this course</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="GEO-CYBERINFRASTRUCTURE_AND_ITS_APPLICATIONS" tabindex="-1" aria-labelledby="GEO-CYBERINFRASTRUCTURE_AND_ITS_APPLICATIONS" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="GEO-CYBERINFRASTRUCTURE_AND_ITS_APPLICATIONS">地理資訊網路架構與應用實作</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        近年來地理資訊系統已經逐漸由專屬系統走向開放式系統，美國的「開放式地理資訊系統聯盟」（Open Geospatial Consortium，OGC）近年來致力於開放式地理資訊系統的規格制定以及推廣，目前已經成功推廣到民間企業、政府部門，以及學校團體當中。本課程相關技術依照授課進度可以分為五大部分：(1) 網際網路基礎建設、(2) 開放地理資訊標準介紹、（3) 網際網路服務協定、（4）伺服器端實作、（5）客戶端實作。本課程將逐一介紹這五大部分，空間資料庫部分採用postgreSQL以及PostGIS空間資料庫模組，地圖及網路伺服器端採用GeoServer開放原始碼伺服器程式，網際網路服務部分採用GeoNode資料供應平台，而程式控制部分則使用python程式語言進行撰寫。在客戶端的部份則採用Python與Leaflet開放地圖視覺化程式庫進行開發。<br><br>
+                        <iframe src="https://www.youtube-nocookie.com/embed/Rw9M3phFNh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-success" href="https://icas.pccu.edu.tw/cfp/?ccode=362980&scode=362980#syllpage" target="_blank" role="button">More about this course</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="INTRODUCTION_TO_SPATIAL_DATA_MINING_AND_MACHINE_LEARNING" tabindex="-1" aria-labelledby="INTRODUCTION_TO_SPATIAL_DATA_MINING_AND_MACHINE_LEARNING" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="INTRODUCTION_TO_SPATIAL_DATA_MINING_AND_MACHINE_LEARNING">空間資料探勘與機器學習導論</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        空間技術的發展已經將傳統GIS帶往一個新的領域，地理資訊系統（geographic information system，GIS）逐漸朝向地理資訊科學（geographic information science，GIS）邁進，近年來美國的NCGIA（National Center for Geographic Information and Analysis）、USGS（University Consortium for Geographic Information Science）、CSISS（Center for Spatially Integrated Social Science）等組織也提出多項地理資訊科學的重要議題列為重點研究項目，藉由探討空間的本質，進而形成能夠分析解釋或解決真實世界所發生的問題。<br><br>
+                        空間分析是地理資訊系統當中最核心的部分，同時也是解決地理空間問題的方法。而解決問題的空間知識來自於對空間資料的知識探索 (KDD, knowledge discovery in database)，是一種從資料庫中粹取出有用的資訊並將知識正式化的有效技術，諸多技術例如資料挖掘 (data mining)、人工智慧演算法等研究方法近年來被廣泛的應用在各個領域當中，本課程除教授空間資料探勘與機器學習相關理論基礎之外，需配合實習課程進行演練，因此修課學生需具備基本的程式設計概念以及操作能力，若能配合自身研究興趣及主題者更佳，學生透過理論學習與實作，可學習到大數據時代所需的空間分析技術。<br><br>
+                        During the past decade, many researchers had devoted to find out how machine learning (ML) and artificial intelligence (AI) could help KDD process and how should the computing environment be structured. The results indicated that this new architecture of data mining not only changed the way to analyze the data, but also revolutionized the way how to deal with the uncertainty in the big data era. The effectiveness of machine learning (ML) and artificial intelligence (AI) to improve knowledge discovering is widely discussed and has been proven in finding spatial relations or patterns in some cases. The instructor in this course will introduce the basic concepts of ML and AI, popular open-source tools of ML and AI, and also the case studies which solved the real-world problems.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-success" href="https://icas.pccu.edu.tw/cfp/?ccode=361136&scode=361136#syllpage" target="_blank" role="button">More about this course</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Scrollable modal -->
+            <div class="modal fade" id="SPATIAL_INFORMATICS_AND_LOCATION_BASED_SERVICE" tabindex="-1" aria-labelledby="SPATIAL_INFORMATICS_AND_LOCATION_BASED_SERVICE" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SPATIAL_INFORMATICS_AND_LOCATION_BASED_SERVICE">空間資訊與適地性服務</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        本課程著重於目前空間資訊結合產業發展的三大要素-SoLoMo，亦即Social(社群)、Local(在地)、Mobile(行動)的過去發展與未來趨勢。在社群（Social）上面會以台灣目前較為普及的社群網路作為討論的對象。在地（Local）的概念則是會以空間地理資訊（Geographical Information）之基本概念、定址服務(Location-Base Service)的發展歷程、以及室內定位（Indoor Navigation）的未來發展趨勢作為討論的主題。在行動（Mobile）概念上則會以行動裝置的發展以及普及化的歷程作為開始，並討論未來物連網時代的可能新興應用。<br><br>
+                        This course focuses on the three key elements of SoLoMo, which are essential for the integration of spatial information and industry development. SoLoMo stands for Social, Local, and Mobile, and this course will cover their past developments and future trends. Regarding Social, we will discuss the popular social network platforms in Taiwan. For Local, we will cover the basic concepts of Geographical Information, the development of Location-Based Services, and the future trends of Indoor Navigation. For Mobile, we will begin with the development and widespread use of mobile devices and discuss potential emerging applications in the era of the Internet of Things.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-success" href="https://icas.pccu.edu.tw/cfp/?ccode=354502&scode=354502#syllpage" target="_blank" role="button">More about this course</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="COMMUNITY_DEVELOPMENT_AND_COMMUNITY_CULTURE" tabindex="-1" aria-labelledby="COMMUNITY_DEVELOPMENT_AND_COMMUNITY_CULTURE" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="COMMUNITY_DEVELOPMENT_AND_COMMUNITY_CULTURE">社區發展與社區文化</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        本課程基於對社區文化與發展的在地行動之探討，提出以下議題之討論：<br>
+                        1.瞭解社區文化與家庭差異。<br>
+                        2.評估社區總體營造工程和社區發展。<br>
+                        3.探討綠能、社區環境景觀改造、長照等相關社區政策與文化經濟遺緒，對社區發展的影響。<br><br>
+                        1.Learn the difference between community culture and families.<br>
+                        2.Evaluate the community general construction and community development.<br>
+                        3.Explore the green-energy,community-environment vision reform with longterm care, certain social-policy and cultural-economic lebtover which influeuce social community development.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-success" href="https://icas.pccu.edu.tw/cfp/?ccode=359240&scode=359240#syllpage" target="_blank" role="button">More about this course</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 id="Publication"><br>出版 | Publication</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                論文期刊及專書 Journal Papers
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <div class="spinner-border text-secondary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <div class="spinner-border text-success" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <div class="spinner-border text-danger" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <div class="spinner-border text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <div class="spinner-border text-info" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <div class="spinner-border text-light" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <div class="spinner-border text-dark" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed text-bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                研討會論文 Conference Papers
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <strong>2016</strong> 
+                                    </div>
+                                    <div class="col-md-11">
+                                        曾怡之 /  台北市公共自行車使用率之時空分析。（2016第十七屆海峽兩岸三地環境資源與生態保育學）
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <strong>2017</strong> 
+                                    </div>
+                                    <div class="col-md-11">
+                                        蔡彥輝  /  棒球場上的時空資料探索-以美國職棒大聯盟數據資料為例。（2017 地理資訊學會年會暨學術研討會）<br>
+                                        林偉良  /  公共自行車缺車缺位現象及其場站周邊環境的關係-以台北市國高中學校周邊場站為例。（2017 中國地理學會年會暨學術研討會）
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <strong>2021</strong> 
+                                    </div>
+                                    <div class="col-md-11">
+                                        陳鑫智  /  以智慧卡資料探討公車使用者行為與時空分析。（2021 中國地理學會年會暨學術研討會）<br>
+                                        賀柏凱  /  無人機影像於檳榔樹辨識及定位。（2021 中國地理學會年會暨學術研討會）
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <strong>2023</strong> 
+                                    </div>
+                                    <div class="col-md-11">
+                                        羅偉恩  /  臺北市多模式公共運輸醫療易達性量測。（2023 中國地理學會年會暨學術研討會）<br>
+                                        李本翔  /  以深度學習處理社群媒體災害即時資料探勘與地理定位。（2023 中國地理學會年會暨學術研討會）
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed text-bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                研究計畫 Project
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div class="spinner-border text-secondary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div class="spinner-border text-success" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div class="spinner-border text-danger" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div class="spinner-border text-warning" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div class="spinner-border text-info" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div class="spinner-border text-light" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div class="spinner-border text-dark" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid">
+            <hr>
+            <div class="container">
+            <div class="row">
+            <div class="col-md-1">
+                <img src="pictures/519LAB.png" alt="Bootstrap" height="40">
+            </div>
+            <div class="col-md-8">
+                <h5><strong>中國文化大學地理學系 數位地球與空間資訊實驗室</strong><h5>
+                <h6>Lab. for Digital Earth and Geoinformaties, Dept. of Geog. PCCU</h6>
+                <hr>
+                <p style="font-size: 12">台北市士林區華岡路55號 （大義館五樓 519室) Taipei, Taiwan 11114<br>TEL : 02-2861-0511 #25523</p>
+            </div>
+            <div class="col-md-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a button class="btn btn1" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="聯絡我們 Contact Us" href="contact.html" style="color: gray;"><i class="zmdi zmdi-email zmdi-hc-2x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a button class="btn btn1" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="在Goole地圖開啟 Search on Google Map" href="https://goo.gl/maps/n5DvnmQaHmXD1nwo9" target="_blank" style="color: gray;"><i class="zmdi zmdi-google-maps zmdi-hc-2x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="撥打電話 Tel to Us" href="tel:+886-2-28610511,25523" style="color: gray;"><i class="zmdi zmdi-phone zmdi-hc-2x"></i></a>
+                    </li>
+                </ul>
+            </div></div></div>
+        </footer>
+        <div class="goTop">
+            <a href="#" class="js-back-to-top back-to-top" title="back-to-top">
+                <i class="zmdi zmdi-eject"></i>
+            </a>
+            <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+        </div>
+    </body>
+</html>

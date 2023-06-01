@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="goTopstyle.css">
+        <link rel="stylesheet" href="css/hoverstyle.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="goTopscript.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <title>PCCU GIS_519 LAB </title>
+    </head>
+<!--
+                ／＞　　フ
+    　　　　   |  _　 _ l
+    　 　　　／` ミ＿Xノ
+    　　 　 /　　　 　 |
+    　　　 /　 ヽ　　 ﾉ
+    　 　 │　　|　|　|
+    　／￣|　　 |　|　|
+    　| (￣ヽ＿_ヽ_)__)
+    　＼二つ
+        神貓保佑程式碼無bug
+-->
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="pictures/519LAB.png" alt="Bootstrap" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                            <a class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="回到首頁" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="成員" href="members.html">Members</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="研究領域" href="research.html">Research</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="系所網頁" href="https://geography.pccu.edu.tw/" target="_blank">Department website</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="聯絡我們" href="contact.html">contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="intro">
+            <div class="mt-4 p-5 bg-body-Secondary rounded">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="fw-bold">Lab. for Digital Earth and Geoinformaties</h1>
+                            <p class="lead">數位地球與空間資訊實驗室</p>
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link link1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="最新消息" href="#news"style="
+                                    margin-left: 33px;
+                                    color:black;
+                                    ">Latest News</a>
+                                </li>
+                                <a class="btn  btn4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="像片廊道" href="upcoming.html" target="_blank">Photography Gallery</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 text-center">
+                        <h2>
+                            <br>數位地球與空間資訊實驗室隸屬於中國文化大學地理學系<br>
+                            致力探索創新的地理空間數據、科學和技術<br>以解決社會和環境挑戰，建設可持續的未來
+                        </h2>
+                        <h5>
+                            We are a 'spatial' research group in the Department of Geography  at Chinese Culture University.<br>
+                            We explore innovative geospatial data, science, and technology to resolve societal and environmental challenges for building a resilient and sustainable future!
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 id="'Advisor"><br><br>成員 | Members</h2>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="card" style="width: 12rem;">
+                            <img src="pictures/CCY2.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">陳致元 助理教授<br>Assistant Professor<br>Chin-Yuan Chen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="card" style="width: 12rem;">
+                            <img src="pictures/WNL.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">羅偉恩 碩士生<br>Master Student<br>Wayne Lo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="card" style="width: 12rem;">
+                            <img src="pictures/PKH.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">賀柏凱 碩士生<br>Master Student<br>Po Kai Ho</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="card" style="width: 12rem;">
+                            <img src="pictures/unname_member.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <a size="5" class="btn link1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="members" href="members.html">查看更多研究成員</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 id="'Advisor"><br><br>研究領域 | Research</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 text-center">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="pictures/big data.jpg" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="margin-left: 33px; border-radius: 10px; background: #01B468; color:black;
+                                        ">空間大數據分析<br>Big Data Spatial analysis</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pictures/photogrammetry.png" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="margin-left: 33px; border-radius: 10px; background: #01B468; color:black;
+                                        ">航空測繪<br>photogrammetry</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pictures/Image Recognition.jpg" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="margin-left: 33px; border-radius: 10px; background: #01B468; color:black;
+                                        ">數值影像處理<br>Image Recognition</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pictures/Geovisualization.jpg" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="margin-left: 33px; border-radius: 10px; background: #01B468; color:black;
+                                        ">地理可視化<br>Geovisualization</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <br>
+                        <a class="btn link1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Research" href="research.html">查看更多研究項目</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 id="news"><br><br>最新消息 | Latest News</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 text-center">
+                        <iframe frameborder="0" scrolling="auto"
+                        noresize="noresize"
+                        style="width:100%; height: 500px;;"
+                        src="table.html">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2><br>關於科系 | About Our Department</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img id="mypic" src="https://geography.pccu.edu.tw/var/file/124/1124/msys_1124_8510719_43375.png" height="200">
+                    </div>
+                    <div class="col-md-8 text-left">
+                        <p style="font-size: 20;margin-bottom: 5;" class="lead">We are the academic unit in Taipei, Taiwan</p>
+                        <h3 style="font-size: 15; margin-bottom: 30; font-weight: 600;">中國文化大學地理學系位在台北陽明山上，設立宗旨在培養地理學之專業人才。</h3>
+                        <a class="btn" href="https://geography.pccu.edu.tw/" target="_blank" style="margin-left: 33px;
+                        background: #01B468;">Department website</a>
+                        <a class="btn" href="https://www.facebook.com/PCCUGEOG" target="_blank" style="margin-left: 33px;
+                        background: #0131b4; color: white;">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid">
+            <hr>
+            <div class="container">
+            <div class="row">
+            <div class="col-md-1">
+                <img src="pictures/519LAB.png" alt="Bootstrap" height="40">
+            </div>
+            <div class="col-md-8">
+                <h5><strong>中國文化大學地理學系 數位地球與空間資訊實驗室</strong><h5>
+                <h6>Lab. for Digital Earth and Geoinformaties, Dept. of Geog. PCCU</h6>
+                <hr>
+                <p style="font-size: 12">台北市士林區華岡路55號 （大義館五樓 519室) Taipei, Taiwan 11114<br>TEL : 02-2861-0511 #25523</p>
+            </div>
+            <div class="col-md-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a button class="btn btn1" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="聯絡我們 Contact Us" href="contact.html" style="color: gray;"><i class="zmdi zmdi-email zmdi-hc-2x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a button class="btn btn1" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="在Goole地圖開啟 Search on Google Map" href="https://goo.gl/maps/n5DvnmQaHmXD1nwo9" target="_blank" style="color: gray;"><i class="zmdi zmdi-google-maps zmdi-hc-2x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="撥打電話 Tel to Us" href="tel:+886-2-28610511,25523" style="color: gray;"><i class="zmdi zmdi-phone zmdi-hc-2x"></i></a>
+                    </li>
+                </ul>
+            </div></div></div>
+        </footer>
+        <div class="goTop">
+            <a href="#" class="js-back-to-top back-to-top" title="back-to-top">
+                <i class="zmdi zmdi-eject"></i>
+            </a>
+            <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+        </div>
+    </body>
+</html>
